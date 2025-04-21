@@ -1,4 +1,5 @@
 
 - Create CMake build.
+- Write code to read/write config data.
 - Support UI for both Rockman 7 & 8.
 - Add localization support.
