@@ -48,3 +48,7 @@ Build release package archive:
 ```
 $ cmake --build build-release -t pack
 ```
+
+### Links
+
+- Downloads: https://github.com/AntumDeluge/RockmanFC_mods/releases/latest
