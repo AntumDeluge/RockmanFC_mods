@@ -52,18 +52,13 @@ target_link_libraries(
 )
 
 if(STATIC AND WIN32)
+	# FIXME: get libraries from `ftlk-config`
 	target_link_libraries(
 		Config_GUI PRIVATE
-		ws2_32
-		kernel32
-		user32
-		gdi32
-		winspool
-		shell32
 		ole32
-		oleaut32
 		uuid
-		comdlg32
-		advapi32
+		comctl32
+		ws2_32
+		winspool
 	)
 endif()
