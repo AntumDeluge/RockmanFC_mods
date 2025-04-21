@@ -1,0 +1,4 @@
+
+- Create CMake build.
+- Support UI for both Rockman 7 & 8.
+- Add localization support.
