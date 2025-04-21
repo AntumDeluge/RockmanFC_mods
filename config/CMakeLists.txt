@@ -62,3 +62,24 @@ if(STATIC AND WIN32)
 		winspool
 	)
 endif()
+
+find_program(ZIP_COMMAND zip)
+if(ZIP_COMMAND)
+	set(EXE_BASENAME "Config_GUI")
+	if(WIN32)
+		set(EXE_BASENAME "${EXE_BASENAME}.exe")
+	endif()
+
+	add_custom_target(pack
+		COMMAND ${ZIP_COMMAND} -9
+			"${PROJECT_BINARY_DIR}/Config_GUI_1.0rc1.zip"
+			"${EXE_BASENAME}"
+		COMMAND ${CMAKE_COMMAND} -E chdir ../ ${ZIP_COMMAND} -9
+			"${PROJECT_BINARY_DIR}/Config_GUI_1.0rc1.zip"
+			"README.md"
+		COMMAND ${CMAKE_COMMAND} -E chdir ../../ ${ZIP_COMMAND} -9
+			"${PROJECT_BINARY_DIR}/Config_GUI_1.0rc1.zip"
+			"LICENSE.txt"
+		DEPENDS Config_GUI
+	)
+endif()

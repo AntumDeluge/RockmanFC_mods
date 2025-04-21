@@ -42,3 +42,9 @@ Example build of static release for Rockman 8:
 $ cmake -B build-release -DROCKMAN_VERSION=8 -DCMAKE_BUILD_TYPE=Release -DSTATIC=ON
 $ cmake --build build-release
 ```
+
+Build release package archive:
+
+```
+$ cmake --build build-release -t pack
+```
