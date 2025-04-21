@@ -32,6 +32,10 @@ unset(FLTK_LIBRARIES CACHE)
 find_library(FLTK_LIBRARIES fltk REQUIRED)
 
 file(GLOB SRC_FILES "${PROJECT_SOURCE_DIR}/src/*.cpp")
+if(WIN32)
+	# Windows resources
+	list(APPEND SRC_FILES "${PROJECT_SOURCE_DIR}/data/win_resources.rc")
+endif()
 
 add_executable(Config_GUI ${SRC_FILES})
 

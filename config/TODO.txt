@@ -1,5 +1,4 @@
 
 - Add localization support.
 - Fix static build.
-- Add Win32 executable icon.
 - Make sure VSync options in correct order.
