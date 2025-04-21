@@ -1,2 +1,4 @@
 
 - Add localization support.
+- Fix static build.
+- Add icon.
