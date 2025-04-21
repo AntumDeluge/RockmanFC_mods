@@ -20,7 +20,7 @@ using namespace std;
 static filesystem::path config_file = "config.ini";
 
 /**
- * Converts a string to unsigned int.
+ * Converts a string to unsigned char.
  *
  * @param st
  *   String to be converted.
@@ -84,11 +84,11 @@ vector<uint8_t> ReadConfig() {
 					data.push_back(0);
 				}
 			} else if (key == "Size") {
-				data.push_back(toUInt(value, 1)-1);
+				data.push_back(toUChar(value, 1)-1);
 			} else if (key == "BGM") {
-				data.push_back(toUInt(value, 1));
+				data.push_back(toUChar(value, 1));
 			} else if (key == "SE") {
-				data.push_back(toUInt(value, 1));
+				data.push_back(toUChar(value, 1));
 			}
 		}
 	}
