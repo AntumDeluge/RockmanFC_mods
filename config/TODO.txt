@@ -1,4 +1,3 @@
 
 - Add localization support.
 - Fix static build.
-- Make sure VSync options in correct order.

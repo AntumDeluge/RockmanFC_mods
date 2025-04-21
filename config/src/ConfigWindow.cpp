@@ -57,8 +57,8 @@ ConfigWindow::ConfigWindow(uint32_t width, uint32_t height, const char* title)
 	groups.push_back(g_audio);
 #else
 	g_vsync = new RadioGroup(10, 270, width - 20, "VSync");
-	g_vsync->addOption("On");
 	g_vsync->addOption("Off");
+	g_vsync->addOption("On");
 	g_vsync->end();
 	groups.push_back(g_vsync);
 #endif
