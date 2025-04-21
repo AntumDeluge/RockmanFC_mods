@@ -8,7 +8,7 @@ Some mods for the [Rockman 7 FC](https://megamanfanon.fandom.com/wiki/Rockman_7_
 
 Applications to replace the default configuration executables.
 
-See [config/README.md]
+See [config/README.md](config/README.md)
 
 ## Links
 
