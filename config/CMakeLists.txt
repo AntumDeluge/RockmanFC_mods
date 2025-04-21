@@ -60,6 +60,7 @@ if(STATIC AND WIN32)
 		comctl32
 		ws2_32
 		winspool
+		gdiplus
 	)
 endif()
 
