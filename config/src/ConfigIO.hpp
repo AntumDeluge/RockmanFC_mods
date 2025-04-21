@@ -10,8 +10,17 @@
 #include "config.h"
 
 #include <cstdint> // *int*_t
+#include <filesystem>
 #include <vector>
 
+
+/**
+ * Sets absolute path to application directory.
+ *
+ * @param dir
+ *   Application directory.
+ */
+extern void SetAppDir(std::filesystem::path dir);
 
 /**
  * Loads binary config data.

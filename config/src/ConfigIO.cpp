@@ -11,6 +11,16 @@
 using namespace std;
 
 
+static filesystem::path config_file = "config.ini";
+
+void SetAppDir(filesystem::path dir) {
+#if ROCKMAN_VERSION == 7
+	config_file = dir / "config.ini";
+#else
+	config_file = dir / "ini.bin";
+#endif
+}
+
 vector<uint8_t> ReadConfig() {
 	vector<uint8_t> data;
 
