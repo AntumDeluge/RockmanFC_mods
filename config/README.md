@@ -36,9 +36,9 @@ CMake configuration options:
 - `CMAKE_BUILD_TYPE:` Build type. Supported values are "Debug" & "Release" (default: "Debug").
 - `FLTK_LIBRARIES:` Path to FLTK library (default: auto detect).
 
-Example build of static release:
+Example build of static release for Rockman 8:
 
 ```
-$ cmake -B build-release -DCMAKE_BUILD_TYPE=Release -DSTATIC=ON
+$ cmake -B build-release -DROCKMAN_VERSION=8 -DCMAKE_BUILD_TYPE=Release -DSTATIC=ON
 $ cmake --build build-release
 ```
