@@ -96,9 +96,9 @@ void ConfigWindow::update() {
 }
 
 void ConfigWindow::readConfig() {
-	vector<uint32_t> data = ReadConfig();
+	vector<uint8_t> data = ReadConfig();
 
-	uint32_t d_count = data.size();
+	uint8_t d_count = data.size();
 	if (d_count > 0) {
 		g_input->setSelected(data[0]);
 	}
@@ -118,7 +118,7 @@ void ConfigWindow::readConfig() {
 }
 
 void ConfigWindow::writeConfig() {
-	vector<uint32_t> data;
+	vector<uint8_t> data;
 
 	data.push_back(g_input->selected());
 	data.push_back(g_display->selected());

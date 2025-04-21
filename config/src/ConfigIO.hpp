@@ -21,7 +21,7 @@
  * @return
  *   Data representing configuration values.
  */
-extern std::vector<uint32_t> ReadConfig();
+extern std::vector<uint8_t> ReadConfig();
 
 /**
  * Exports config data to binary file.
@@ -31,6 +31,6 @@ extern std::vector<uint32_t> ReadConfig();
  * @param data
  *   Data representing configuration values.
  */
-extern void WriteConfig(std::vector<uint32_t> data);
+extern void WriteConfig(std::vector<uint8_t> data);
 
 #endif /* RMFC_MODS_CONFIG_IO */

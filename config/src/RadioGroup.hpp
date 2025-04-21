@@ -43,7 +43,7 @@ public:
 	 * @param idx
 	 *   Index of option to select.
 	 */
-	void setSelected(uint32_t idx) override;
+	void setSelected(uint8_t idx) override;
 
 	/**
 	 * Retreives selected value.
@@ -51,7 +51,7 @@ public:
 	 * @return
 	 *   Selected index.
 	 */
-	uint32_t selected();
+	uint8_t selected();
 };
 
 #endif /* RMFC_MODS_CONFIG_RADIO_GROUP */

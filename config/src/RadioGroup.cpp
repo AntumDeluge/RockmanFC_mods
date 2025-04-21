@@ -22,7 +22,7 @@ void RadioGroup::addOption(const char* label) {
 	resize(this->x(), this->y(), this->w(), 10 + (20 * options.size()));
 	uint32_t x = this->x() + 5;
 	uint32_t y = this->y() + 5;
-	for (uint32_t idx = 0; idx < options.size(); idx++) {
+	for (uint8_t idx = 0; idx < options.size(); idx++) {
 		if (idx > 0) {
 			y += 20;
 		}
@@ -30,8 +30,8 @@ void RadioGroup::addOption(const char* label) {
 	}
 }
 
-void RadioGroup::setSelected(uint32_t idx) {
-	const uint32_t o_count = options.size();
+void RadioGroup::setSelected(uint8_t idx) {
+	const uint8_t o_count = options.size();
 	if (o_count < 1) {
 		return;
 	}
@@ -45,8 +45,8 @@ void RadioGroup::setSelected(uint32_t idx) {
 	options[idx]->value(1);
 }
 
-uint32_t RadioGroup::selected() {
-	for (uint32_t idx = 0; idx < options.size(); idx++) {
+uint8_t RadioGroup::selected() {
+	for (uint8_t idx = 0; idx < options.size(); idx++) {
 		if (options[idx]->value() > 0) {
 			return idx;
 		}

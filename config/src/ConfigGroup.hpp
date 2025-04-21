@@ -53,7 +53,7 @@ public:
 	 * @param idx
 	 *   Index of option to select.
 	 */
-	virtual void setSelected(uint32_t idx) = 0;
+	virtual void setSelected(uint8_t idx) = 0;
 
 	/**
 	 * Sets selected option.
@@ -63,7 +63,7 @@ public:
 	 * @param selected
 	 *   Whether or not option should be enabled (does nothing in this implementation).
 	 */
-	virtual void setSelected(uint32_t idx, const bool selected) {
+	virtual void setSelected(uint8_t idx, const bool selected) {
 		setSelected(idx);
 	}
 };

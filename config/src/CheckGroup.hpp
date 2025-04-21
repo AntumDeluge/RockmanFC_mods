@@ -48,7 +48,7 @@ public:
 	void addOption(const char* label, const bool selected) override;
 
 	/** Does nothing in this implementation. */
-	void setSelected(uint32_t idx) override {};
+	void setSelected(uint8_t idx) override {};
 
 	/**
 	 * Sets selected state of option.
@@ -58,7 +58,7 @@ public:
 	 * @param selected
 	 *   Whether or not option should be enabled.
 	 */
-	void setSelected(uint32_t idx, const bool selected) override;
+	void setSelected(uint8_t idx, const bool selected) override;
 
 	/**
 	 * Retreives selected values.

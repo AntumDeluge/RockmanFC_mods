@@ -11,14 +11,14 @@
 using namespace std;
 
 
-vector<uint32_t> ReadConfig() {
-	vector<uint32_t> data;
+vector<uint8_t> ReadConfig() {
+	vector<uint8_t> data;
 
 	// TODO: read from either text or binary file
 
 	return data;
 }
 
-void WriteConfig(vector<uint32_t> data) {
+void WriteConfig(vector<uint8_t> data) {
 	// TODO: export to either text or binary file
 }

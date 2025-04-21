@@ -21,7 +21,7 @@ void CheckGroup::addOption(const char* label, const bool selected) {
 	resize(this->x(), this->y(), this->w(), 10 + (20 * options.size()));
 	uint32_t x = this->x() + 5;
 	uint32_t y = this->y() + 5;
-	for (uint32_t idx = 0; idx < options.size(); idx++) {
+	for (uint8_t idx = 0; idx < options.size(); idx++) {
 		if (idx > 0) {
 			y += 20;
 		}
@@ -29,8 +29,8 @@ void CheckGroup::addOption(const char* label, const bool selected) {
 	}
 }
 
-void CheckGroup::setSelected(uint32_t idx, const bool selected) {
-	const uint32_t o_count = options.size();
+void CheckGroup::setSelected(uint8_t idx, const bool selected) {
+	const uint8_t o_count = options.size();
 	if (o_count < 1 || idx > o_count - 1) {
 		return;
 	}
