@@ -11,6 +11,8 @@
 #include "ConfigWindow.hpp"
 #include "RadioGroup.hpp"
 
+using namespace std;
+
 
 static void _onAccept(Fl_Widget* w, void* userdata) {
 	ConfigWindow* window = (ConfigWindow*) userdata;
