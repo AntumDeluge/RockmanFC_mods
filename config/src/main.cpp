@@ -10,6 +10,9 @@
 #include <iostream>
 #include <string>
 
+#include <FL/Fl_RGB_Image.H>
+
+#include "icon_16_raw.h"
 #include "ConfigIO.hpp"
 #include "ConfigWindow.hpp"
 
@@ -28,6 +31,7 @@ int main(int argc, char** argv) {
 
 	ConfigWindow* window = new ConfigWindow(300, 390, ("Rockman " + to_string(ROCKMAN_VERSION)
 			+ " FC Config").c_str());
+	window->icon(new Fl_RGB_Image(icon_16_raw, 16, 16, 4));
 
 	window->end();
 	window->show(argc, argv);

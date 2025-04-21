@@ -38,6 +38,7 @@ add_executable(Config_GUI ${SRC_FILES})
 target_include_directories(
 	Config_GUI PRIVATE
 	"${PROJECT_SOURCE_DIR}/src"
+	"${PROJECT_SOURCE_DIR}/data"
 	"${PROJECT_BINARY_DIR}"
 )
 
