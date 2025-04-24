@@ -32,8 +32,13 @@ ConfigWindow::ConfigWindow(uint32_t width, uint32_t height, const char* title)
 	position((Fl::w() - width) / 2, (Fl::h() - height) / 2);
 
 	g_input = new RadioGroup(10, 20, width - 20, "Input");
+#if ROCKMAN_VERSION == 7
 	g_input->addOption("Z = jump, X = shoot");
 	g_input->addOption("Z = shoot, X = jump");
+#else
+	g_input->addOption("Z = shoot, X = jump");
+	g_input->addOption("Z = jump, X = shoot");
+#endif
 	g_input->end();
 	groups.push_back(g_input);
 
