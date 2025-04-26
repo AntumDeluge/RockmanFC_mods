@@ -43,6 +43,8 @@ using the [Rockman8FC_v3.13b_image_dir](#image-data-patch) patch listed above. O
 the `image` directory from Sparkplug's package to `image/image`. __Note:__ For the game to load
 properly a file named `image/image.bin` must exist. This can simply be an empty text file.
 
+English configuration utilities can be found [here](../config).
+
 ## DxLib Game Archive Utilities
 
 The following utilities can be used to extract the contents of `image/image.bin`:
