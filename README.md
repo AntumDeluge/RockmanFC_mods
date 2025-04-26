@@ -10,6 +10,10 @@ Applications to replace the default configuration executables.
 
 See [config/README.md](config/README.md)
 
+## Patches
+
+See [patches](patches)
+
 ## Links
 
 - source code (CodeBerg): https://codeberg.org/AntumDeluge/RockmanFC_mods
